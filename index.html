@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!--refer to the stylesheet and link it-->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Llaryz Collins</div>
+      <div>
+        <ul class="nav-links">
+          <!--this area here creates links to specific parts of the webpage once clicked-->
+          <li><a href="#about">About</a></li>
+          <li><a href="#languages">Coding Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Llaryz Collins</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <!--make a js-->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#languages" onclick="toggleMenu()">Coding Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/llaryz-pfp.png" 
+        alt="my profile picture" 
+        class="profile-pic" />
+        <!--place profile pic here-->
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, my name is</p>
+        <h1 class="title">Llaryz Collins</h1>
+        <p class="section__text__p2">Aspiring Web Developer</p>
+        <div class="btn-containter">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/RESUME-IT.docx')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contacts'">
+            Contact Me
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My Linked Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/llaryz-collins-258781261/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Linked Profile"
+            class="icon"
+            onclick="location.href='https:https://github.com/Llaryz'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know Me</p>
+      <h1 class="title">Who I am</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/aboutme-pic.png"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                I am still in my 3rd year of University, and am looking for internships or entry level jobs 
+                who would be willing to take someone like me.
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Studies</h3>
+              <p>
+                Studying Information Technology at Queensland
+                University of Technology.<br />I major in Computer Science.
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              <br>As someone who still believes they don't have a creative mind, I
+              want to be innovative and help the future for the better. <br> "Do not
+              allow your mind to be imprisoned by majority thinking. Remember
+              that the limits of science are not the limits of imagination." <br>-
+              Dr Patricia Bath
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#languages'"
+      />
+    </section>
+    <section id="languages">
+      <p class="section__text__p1">Languages I have touched on</p>
+      <h1 class="title">Coding Languages</h1>
+      <div class="coding-details-container">
+        <div class="about-containers">
+          <div class="details-containers">
+          <h2 class="coding-sub-title">Experience in</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Coding icon"
+                class="icon"
+              />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Coding icon"
+                class="icon"
+              />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Coding icon"
+                class="icon"
+              />
+              <div>
+                <h3>Javascript</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Coding icon"
+                class="icon"
+              />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Coding icon"
+                class="icon"
+              />
+              <div>
+                <h3>C#</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Coding icon"
+                class="icon"
+              />
+              <div>
+                <h3>MySQL</h3>
+                <p>Beginner</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Take a look at what I have been working on</p>
+      <h1 class="title">Projects</h1>
+      <div class="coding-details-container">
+        <div class="about-containers">
+        <div class="details-containers color-container">
+          <div class="article-container">
+            <img src="./assets/mg-website-forsale.png" 
+          alt="Project 1" 
+          class="project-img"/>
+          </div>
+          <h2 class="coding-sub-title project-title">1st Project</h2>
+        <div class="btn-containter">
+          <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://github.com/Llaryz'">
+            GitHub
+          </button>
+          <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href='https://llaryz.github.io/MGFor-Sale/'">
+            Website
+          </button>
+        </div>
+        </div>
+        <div class="details-containers color-container">
+          <div class="article-container">
+            <img src="./assets/Not-available.png" 
+          alt="Project 1" 
+          class="project-img"/>
+          </div>
+          <h2 class="coding-sub-title project-title">Still in the works</h2>
+        <div class="btn-containter">
+          <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href=''"> <!--NEED TO ADD-->
+            GitHub
+          </button>
+          <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href=''"> <!--NEED TO ADD-->
+            Website
+          </button>
+        </div>
+        </div>
+        <div class="details-containers color-container">
+          <div class="article-container">
+            <img src="./assets/Not-available.png" 
+          alt="Project 1" 
+          class="project-img"/>
+          </div>
+          <h2 class="coding-sub-title project-title">Still in the works</h2>
+        <div class="btn-containter">
+          <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href=''">
+            CodeSandBox
+          </button>
+          <button 
+            class="btn btn-color-2 project-btn" 
+            onclick="location.href=''">
+            Link
+          </button>
+        </div>
+        </div>
+      </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contacts">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" 
+          alt="Email icon" 
+          class="icon contact-icon email-icon"/>
+          <p><a href="mailto:llaryzc02@gmail.com">llaryzc02@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" 
+          alt="LinkedIn icon" 
+          class="icon contact-icon"/>
+          <p><a href="https://www.linkedin.com/in/llaryz-collins-258781261/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <!--this area here creates links to specific parts of the webpage once clicked-->
+            <li><a href="#about">About</a></li>
+            <li><a href="#languages">Coding Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Llaryz Collins. All rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <!--link the javascript file-->
+    <!--also link your js file-->
+  </body>
+</html>
